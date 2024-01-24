@@ -15,16 +15,16 @@ public class Runigram {
 
 		// Creates an image which will be the result of various 
 		// image processing operations:
-		Color[][] imageOut;
+		//Color[][] imageOut;
 
 		// Tests the horizontal flipping of an image:
 		// imageOut = grayScaled(tinypic);
-		imageOut = blend(tinypic, flippedVertically(tinypic), 0.5);
+		//imageOut = blend(tinypic, flippedVertically(tinypic), 0.5);
 
 
 
-		System.out.println();
-		print(imageOut);
+		//System.out.println();
+		//print(imageOut);
 		
 		//// Write here whatever code you need in order to test your work.
 		//// You can reuse / overide the contents of the imageOut array.
@@ -190,7 +190,6 @@ public class Runigram {
 				StdDraw.pause(500);
 			}
 		}
-	}
 	
 	/** Creates a canvas for the given image. */
 	public static void setCanvas(Color[][] image) {
@@ -222,4 +221,6 @@ public class Runigram {
 		StdDraw.show();
 	}
 }
+
+
 
