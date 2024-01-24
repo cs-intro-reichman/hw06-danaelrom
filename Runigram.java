@@ -182,9 +182,9 @@ public class Runigram {
 	public static void morph(Color[][] source, Color[][] target, int n) {
 		Color[][] newTarget = scaled(target,source[0].length,source.length);
 		Color [][] res;
-		double alpha = 0;
+		setCanvas(source);
 		for(int i = 0; i <= n; i++){
-				alpha = (n-i)/n;
+				double alpha = (double)(n-i)/n;
 				res = blend(source, newTarget, alpha);
 				display(res);
 				StdDraw.pause(500);
